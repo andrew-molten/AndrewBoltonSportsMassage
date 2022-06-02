@@ -410,6 +410,10 @@ nav .current {
     width: 100%;
   }
 
+  #location_gmap_canvas {
+    width: 100%;
+  }
+
   /* Buttons */
   #times-available {
     width: 80% !important;
@@ -418,6 +422,20 @@ nav .current {
   #Book-online-bottom {
     width: 60% !important;
   }
+  #times-available-location {
+    line-height: 1.1rem;
+  }
+}
+
+/* Location */
+.loc_head {
+  font-size: 1.5rem;
+}
+.opening_hours {
+  font-size: 1rem;
+}
+.loc_info {
+  margin-left: 0;
 }
 
 /* Privacy Policy */
