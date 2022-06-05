@@ -9,6 +9,8 @@ var x = window.matchMedia("(max-width: 1080px)");
 const slideOne = document.getElementById("sl1");
 
 let curSlide = 0;
+let touchstartX = 0;
+let touchendX = 0;
 
 const moveslides = function (s, i) {
   s.style.visibility = "visible";
@@ -56,7 +58,6 @@ const nextSlide = function () {
   curSlide++;
   goToSlide(curSlide);
 };
-
 const prevSlide = function () {
   curSlide--;
   goToSlide(curSlide);
@@ -65,15 +66,24 @@ const prevSlide = function () {
 btnRight.addEventListener("click", nextSlide);
 btnLeft.addEventListener("click", prevSlide);
 
+function handleSliderSwipe() {
+  if (touchendX < touchstartX) nextSlide();
+  if (touchstartX < touchendX) prevSlide();
+}
+slider.addEventListener("touchstart", (e) => {
+  touchstartX = e.changedTouches[0].screenX;
+});
+slider.addEventListener("touchend", (e) => {
+  touchendX = e.changedTouches[0].screenX;
+  handleSliderSwipe();
+});
+
 //Center slide buttons verically
 var sliderHeight;
-
 const calcImgHeight = function () {
   sliderHeight = slider.offsetHeight;
 };
-
 const buttonHeight = btnLeft.offsetHeight;
-
 const centerButton = function (btn) {
   btn.style.transform = `translateY(${sliderHeight / 2 - buttonHeight / 2}px)`;
 };
