@@ -83,15 +83,21 @@ var sliderHeight;
 const calcImgHeight = function () {
   sliderHeight = slider.offsetHeight;
 };
+
 const buttonHeight = btnLeft.offsetHeight;
 const centerButton = function (btn) {
   btn.style.transform = `translateY(${sliderHeight / 2 - buttonHeight / 2}px)`;
 };
 const centerButtons = function () {
+  calcImgHeight();
   centerButton(btnLeft);
   centerButton(btnRight);
 };
-window.onload = function () {
+slider.onload = function () {
   init();
 };
+
+//Not working
 window.addEventListener("resize", centerButtons());
+
+slideOne.onload = centerButtons;
