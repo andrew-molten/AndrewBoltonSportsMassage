@@ -20,7 +20,6 @@ const moveslides = function (s, i) {
 
 // Trying to fix the slides so they don't fan out when you push a button
 const init = function () {
-  centerButtons();
   // Spread slides out
   slides.forEach(function (s, i) {
     if (s.classList.contains("vis")) {
@@ -93,9 +92,8 @@ const centerButtons = function () {
   centerButton(btnLeft);
   centerButton(btnRight);
 };
-slider.onload = function () {
-  init();
-};
+
+init();
 
 //Not working
 window.addEventListener("resize", centerButtons());
