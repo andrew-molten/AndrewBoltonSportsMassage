@@ -312,8 +312,8 @@ nav .current {
   flex: 33%;
 }
 
-/************* Phone view ************/
-/************* Phone view ************/
+/*************************** Phone view **************************/
+/*************************** Phone view **************************/
 @media only screen and (max-width: 1080px) {
   h1,
   h2,
@@ -362,6 +362,10 @@ nav .current {
   /* Hide nav menu*/
   .nav__item {
     display: none;
+  }
+
+  #mc_embed_signup {
+    width: 100% !important;
   }
 
   /* Display Nav menu */

@@ -69,6 +69,7 @@ function handleSliderSwipe() {
   if (touchendX < touchstartX) nextSlide();
   if (touchstartX < touchendX) prevSlide();
 }
+
 slider.addEventListener("touchstart", (e) => {
   touchstartX = e.changedTouches[0].screenX;
 });
