@@ -312,6 +312,14 @@ nav .current {
   flex: 33%;
 }
 
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 600px;
+  margin: auto;
+}
+
 /*************************** Phone view **************************/
 /*************************** Phone view **************************/
 @media only screen and (max-width: 1080px) {
