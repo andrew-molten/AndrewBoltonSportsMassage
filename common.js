@@ -8,19 +8,48 @@
 
 // Navigation
 const nav = document.querySelector(".nav");
+const navLinks = document.querySelector(".nav__links");
 const btnBookOnline = document.querySelector(".book-online");
 const headerLogo = document.querySelector(".header-logo");
+const topNav = document.getElementById("topNav");
+
+const minimizeNavBar = function () {
+  topNav.className = "nav__links";
+  headerLogo.className = "header-logo";
+  nav.style.minHeight = "0px";
+  nav.style.height = "0px";
+  nav.style.transition = "all 0.9s ease-out";
+  navLinks.style.transition = "transform 0.9s ease-out, visibility 0.9s";
+};
+
+const expandNavBar = function () {
+  topNav.className += " responsive";
+  headerLogo.className += " responsive";
+  nav.style.maxHeight = "20em";
+  nav.style.minHeight = "18.1em";
+  nav.style.transition = "all 1s ease";
+  navLinks.style.transition = "transform 1s ease, visibility 1s";
+};
 
 function navBarAction() {
-  const x = document.getElementById("topNav");
-  if (x.className === "nav") {
-    x.className += " responsive";
-    headerLogo.className += " responsive";
+  if (topNav.className === "nav__links") {
+    expandNavBar();
   } else {
-    x.className = "nav";
-    headerLogo.className = "header-logo";
+    minimizeNavBar();
   }
 }
+
+window.addEventListener("resize", function (e) {
+  const viewWidth = e.currentTarget.innerWidth;
+  if (viewWidth > 950) {
+    nav.style.height = "auto";
+    nav.style.transition = "none";
+    navLinks.style.transition = "none";
+  }
+  if (viewWidth <= 950) {
+    minimizeNavBar();
+  }
+});
 
 const handleHover = function (e) {
   if (e.target.classList.contains("nav__link")) {
@@ -28,7 +57,9 @@ const handleHover = function (e) {
     const siblings = link.closest(".nav").querySelectorAll(".nav__link");
 
     siblings.forEach((el) => {
-      if (el !== link) el.style.opacity = this;
+      if (el !== link) {
+        el.style.opacity = this;
+      }
     });
   }
 };

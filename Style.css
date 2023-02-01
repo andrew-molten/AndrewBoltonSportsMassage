@@ -20,8 +20,7 @@ h1,
 h2,
 h3,
 h4,
-p,
-ul {
+p {
   margin: 2rem 0 0 0;
 }
 li {
@@ -42,39 +41,53 @@ h4 {
   display: flex;
   list-style: none;
   justify-content: center;
+  transition: none;
 }
 .header-logo {
+  z-index: 2;
   width: 50%;
   display: block;
-  position: relative;
   margin: auto;
 }
-nav {
-  margin: 30px, 30px, 0, 30px;
+.book-btn-head {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav {
   font-size: 25px;
+  height: auto;
   font-style: normal;
   text-align: center;
+  transition: none;
 }
 a:link {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
-nav a:link {
+
+.nav a:link {
   color: #2e2e2e;
   font-weight: 1;
   padding: 1rem 0.5rem;
 }
-nav a:visited {
+.nav a:visited {
   color: #2e2e2e;
   font-weight: 1;
 }
-nav .current {
+.nav .current {
   text-decoration: underline 0.1rem;
   text-underline-position: under;
 }
+/* .nav__link {
+  transition: transform 0.5s ease;
+}
+.nav__link:hover {
+  transform: scale(1.5, 1.5);
+  transition: transform 0.5s ease;
+} */
 
 /* Remove hamburger icon for desktop*/
-.nav .icon {
+.logo-bars .icon {
   display: none;
 }
 
@@ -88,22 +101,35 @@ nav .current {
   border-style: none;
   border-radius: 10rem;
   color: #fff;
+  transition: transform 0.5s ease;
 }
 
-.book-online {
-  position: absolute;
-  display: inline-block;
-  right: 50px;
-  top: 10vh;
+.logo-bars {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 #book-online {
+  display: none;
   color: #fff;
   padding: 1em 1.5em;
 }
 
+#book-online-head {
+  /* font-family: "webFont", Arial; */
+  color: #fff;
+  padding: 1em 1.5em;
+  /* font-weight: 1; */
+  font-size: 25px;
+  display: inline-block;
+  align-self: center;
+}
+
 .btn:hover {
   opacity: 80%;
+  border-width: 4px;
+  transform: scale(1.1, 1.1);
+  transition: transform 0.5s ease;
 }
 .main-header {
   margin: auto;
@@ -322,7 +348,7 @@ nav .current {
 
 /*************************** Phone view **************************/
 /*************************** Phone view **************************/
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 950px) {
   h1,
   h2,
   h3,
@@ -332,27 +358,41 @@ nav .current {
     margin: 1rem 0 0 0;
   }
 
-  /* Display hamburger icon */
-  .nav .icon {
-    display: block;
+  .logo-bars {
+    display: grid;
+    grid-template-columns: 3.5fr 0.5fr;
+  }
+
+  .logo-bars .icon {
+    display: flex;
+    font-size: 7vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fa-bars {
+    color: #2e2e2e;
+    cursor: pointer;
     font-size: 2rem;
-    position: absolute;
-    right: 0;
-    top: 0;
+  }
+
+  .nav {
+    max-height: 20em;
+    min-height: 0em;
+    transition: all 1s ease-out;
+    height: 0px;
   }
 
   /* Header */
-  .header_row {
+  /* .header_row {
     display: flex;
   }
   .head_col2 {
     flex: 10%;
-  }
+  } */
   .header-logo {
     background-color: #fff;
-    float: left;
     width: 90%;
-    position: relative;
   }
 
   /* Slider */
@@ -368,8 +408,15 @@ nav .current {
   }
 
   /* Hide nav menu*/
+  .nav__links {
+    transform: translateY(-445px);
+    display: block;
+    /* transition: transform 1s ease-out, visibility 1s; */
+    visibility: hidden;
+  }
+
   .nav__item {
-    display: none;
+    display: block;
   }
 
   #mc_embed_signup {
@@ -377,17 +424,26 @@ nav .current {
   }
 
   /* Display Nav menu */
-  .nav.nav.responsive .nav__links {
-    display: block;
-  }
-  .nav.responsive .nav__item {
+  .nav__links.responsive .nav__item {
     float: none;
-    display: block;
+    visibility: visible;
   }
+
+  .nav__links.responsive {
+    transform: translateY(0px);
+    transition: transform 1s ease-out, visibility 0.5s;
+    visibility: visible;
+  }
+
   #book-online {
+    display: inline-block;
     position: static;
     padding: 0.5em 0.75em !important;
     margin-top: 1rem;
+  }
+
+  #book-online-head {
+    display: none;
   }
 
   /* General Elements */
@@ -429,7 +485,6 @@ nav .current {
   /* Buttons */
   #times-available {
     width: 80% !important;
-    /* margin: 2rem auto; */
   }
   #Book-online-bottom {
     width: 60% !important;
