@@ -5,7 +5,7 @@ const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
 const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
-var x = window.matchMedia("(max-width: 1080px)");
+var x = window.matchMedia("(max-width: 950px)");
 const slideOne = document.getElementById("sl1");
 
 let curSlide = 0;
@@ -28,9 +28,10 @@ const init = function () {
     s.style.transform = `translateX(${100 * i - curSlide}%)`;
     setTimeout(() => {
       s.style.visibility = "visible";
-      s.style.transition = "transform 1s";
+      // s.style.transition = "transform 1s";
     }, 1000);
   });
+  centerButtons();
 };
 
 const lastSlideNumber = function () {
@@ -79,14 +80,15 @@ slider.addEventListener("touchend", (e) => {
 });
 
 //Center slide buttons verically
-var sliderHeight;
+let slideHeight;
 const calcImgHeight = function () {
-  sliderHeight = slider.offsetHeight;
+  slideHeight = slides[0].clientHeight;
+  slider.style.height = slideHeight;
 };
 
 const buttonHeight = btnLeft.offsetHeight;
 const centerButton = function (btn) {
-  btn.style.transform = `translateY(${sliderHeight / 2 - buttonHeight / 2}px)`;
+  btn.style.transform = `translateY(${slideHeight / 2 - buttonHeight / 2}px)`;
 };
 const centerButtons = function () {
   calcImgHeight();
@@ -96,7 +98,8 @@ const centerButtons = function () {
 
 init();
 
-//Not working
-window.addEventListener("resize", centerButtons());
+window.addEventListener("resize", function (e) {
+  centerButtons();
+});
 
-slideOne.onload = centerButtons;
+// slideOne.onload = centerButtons;

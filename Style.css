@@ -172,13 +172,24 @@ a:link {
   transform: translatex(200%);
 }
 .slider__btn {
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 50%;
+  border-width: 0;
+  background-color: #000000;
+  color: white;
   position: absolute;
   opacity: 60%;
-  /* z-index: 20; */
   cursor: grab;
   height: 2.5rem;
   width: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  justify-content: center;
+}
+.slider-button-text {
+  /* align-items: center; */
+  /* justify-content: center; */
+  align-self: center;
 }
 .slider__btn--left {
   left: 1%;
