@@ -528,3 +528,7 @@ a:link {
 .footer_img {
   top: 0 !important;
 }
+
+#classicLink {
+  color: rgb(0, 42, 255);
+}
