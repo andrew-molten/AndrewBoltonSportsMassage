@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link href="Style.1.css" rel="stylesheet" />
+  <link href="Style.3.css" rel="stylesheet" />
   <!-- Hamburger Icon -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Life+Savers&family=Poiret+One&display=swap"
+    rel="stylesheet"
   />
   <link
       rel="shortcut icon"
@@ -16,7 +20,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title class="title">Andrew Bolton Sports Massage</title>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJHDHQFCP7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GJHDHQFCP7');
+</script>
+    <!-- Hotjar Tracking Code for my site -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3471974,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   </head>
+
   <!-- <img src="Website photos/Logo/Logo3.png" />
     -->
   <body>
@@ -73,57 +98,71 @@
       </nav>
     </header>
     <div class="slider">
-      <div class="slide sl1 vis" id="sl1">
-        <img src="Website photos\Sports\DSC_0059.JPG" alt="Massage hands" />
+      <div class="slide sl1 vis active" id="sl1">
+        <img
+        src="Website photos\Relaxing\massage space leafy.jpg" alt="leafy massage space"
+        />
       </div>
       <div class="slide sl2 vis">
         <img
-          src="Website photos\Sports\Massage space.jpg"
-          alt="Massage studio"
-        />
+        src="Website photos\Sports\DSC_0201(2).jpg"
+        alt="Deep tissue massage"
+      />
       </div>
       <div class="slide sl3 vis">
-        <img src="Website photos\Sports\DSC_0207.JPG" alt="Strong massage" />
-      </div>
-      <div class="slide">
         <img
-          src="Website photos\Sports\Andrew Bolton Sports Massage.JPG"
-          alt="Neck massage"
-        />
+        src="Website photos\Relaxing\massage space warm.jpg"
+        alt="Massage studio"/>
       </div>
       <div class="slide">
+        <img src="Website photos\Sports\DSC_0059.JPG" alt="Massage hands" />
+      </div>
+      <div class="slide">
+        <img src="Website photos\Relaxing\consultation space.jpg" alt="massage consultation space" />
+        <!-- <img src="Website photos\Sports\DSC_0207.JPG" alt="Strong massage" /> -->
+      </div>
+      <div class="slide">
+        <!-- <img src="Website photos\Sports\DSC_0189.JPG" alt="ITB massage" /> -->
         <img
-          src="Website photos\Sports\DSC_0201(2).jpg"
-          alt="Deep tissue massage"
-        />
+        src="Website photos\Sports\Andrew Bolton Sports Massage.JPG"
+        alt="Neck massage"
+      />
       </div>
-      <div class="slide">
-        <img src="Website photos\Sports\DSC_0189.JPG" alt="ITB massage" />
-      </div>
-      <div class="slide">
+      <div class="slide" >
         <img
-          src="Website photos\Relaxing\DSC_0193.JPG"
+      
+          src="Website photos\Logo\India2.jpg"
           alt="Relaxing massage"
+          id="lastSlide"
         />
       </div>
-      <button class="slider__btn slider__btn--left"><span class=slider-button-text>&larr;</span></button>
-      <button class="slider__btn slider__btn--right"><span class=slider-button-text>&rarr;</span></button>
+      <div class="dots" id="dotsID">
+        <span class="dot active" data-slide="1"></span>
+    <span class="dot" data-slide="2"></span>
+    <span class="dot" data-slide="3"></span>
+    <span class="dot" data-slide="4"></span>
+    <span class="dot" data-slide="5"></span>
+      </div>
+      <!-- <button class="slider__btn slider__btn--left"><span class=slider-button-text>&larr;</span></button>
+      <button class="slider__btn slider__btn--right"><span class=slider-button-text>&rarr;</span></button> -->
     </div>
     <section class="section" id="section--1">
       <h3 style="color: #145cad">Welcome</h3>
       <div class="row">
         <div class="column home-col1">
-          <p>
-            I focus on sports massage, deep tissue massage & yoga exercises.</p><p>
-            My goal is to relieve your pain and tension through massage while also helping to figuring out the root cause. </p><p>
-            I also suggest tools & exercises relevant to your situation to help overcome your injury or prevent pains injuries from coming back! </p><p>Through a constantly growing
+          <p class="paragraph-1">
+            Here at Andrew Bolton Sports Massage it's my goal to relieve your pain and tension, so that you can feel relaxed and rejuvenated.</p><p>
+            My specialty is deep tissue massage, but I also offer a range of other massage techniques including ralaxation, sports, and prenatal. We use a combination of techniques to help you achieve your desired results, whether that be to reduce pain, alleviate tension or simply unwind and relax.</p><p>
+            I am passionate about helping people achieve a life free from pain. I firmly believe that cultivating balance accross various aspects of our physical and mental well-being help in this quest, including strength, flexibility, breathing techniques, mobility, nutrition, meditation & cardiovascular health.</p> 
+            
+            <!-- <p>Through a constantly growing
             knowledge of how our bodies work and move I use various techniques
             to release soft tissue and break down adhesions, relieving pain and
             muscle tension so you can move more freely, more efficiently and
             relax in your own body.
-          </p>
-          <p>
-            <strong>Benefits of Massage Therapy include:</strong><br />
+          </p> -->
+          <!-- <p>
+            <strong>Other benefits of massage therapy include:</strong><br />
             Pain & tension relief <br />
             Injury prevention <br />
             Reduced recovery time from an injury or surgery <br />
@@ -131,7 +170,7 @@
             Improved flexibility <br />
             Headache relief <br />
             Can help reduce depression and anxiety
-          </p>
+          </p>-->
         </div>
         <div class="column home-col2">
           <div class="mapouter">
@@ -151,18 +190,51 @@
           </div>
           <p class="center">
             <strong>
-              Opening hours vary slightly weekly so please see available times:
+              Open hours: <br/>
             </strong>
+            Monday 12pm - 7pm<br/>
+            Tuesday 9am - 3pm<br/>
+            Wednesday 9am - 5pm<br/>
+            Thursday 12pm - 7pm<br/>
+            Friday 9am - 3.30pm<br/>
           </p>
-          <a
+          <!-- <a
             class="btn"
             id="times-available"
             href="https://andrew-bolton-massage-and-yoga.cliniko.com/bookings#service"
             >Treatment times available</a
-          >
+          > -->
         </div>
       </div>
     </section>
+
+    <!-- Online Booking -->
+    <div class="container">
+    <div class="booking-row">
+      <h3 class="handwritten">Book an Appointment</h3>
+      <iframe
+        id="cliniko-94087596"
+        src="https://andrew-bolton-massage-and-yoga.cliniko.com/bookings?embedded=true"
+        frameborder="0"
+        scrolling="auto"
+        width="100%"
+        height="1000"
+        style="pointer-events: auto"
+      ></iframe>
+      <script type="text/javascript">
+        window.addEventListener("message", function handleIFrameMessage(e) {
+          var clinikoBookings = document.getElementById("cliniko-94087596");
+          if (typeof e.data !== "string") return;
+          if (e.data.search("cliniko-bookings-resize") > -1) {
+            var height = Number(e.data.split(":")[1]);
+            clinikoBookings.style.height = height + "px";
+          }
+          e.data.search("cliniko-bookings-page") > -1 &&
+            clinikoBookings.scrollIntoView();
+        });
+      </script>
+    </div>
+  </div>
 
     <!-- Begin Mailchimp Signup Form -->
     <link
@@ -294,12 +366,17 @@
       var $mcj = jQuery.noConflict(true);
     </script>
     <!--End mc_embed_signup-->
+    <div class="cookies-banner hidden">
+      By clicking ”Accept”, you agree to the storing of cookies on your device to
+      enhance site navigation, analyze site usage, and improve marketing.
+      <button>Accept</button>
+    </div>
 
     <div class="footer_img_wrap_index">
       <img
         class="footer_img_index"
-        src="Website photos\Sports\Massage table.JPG"
-        alt="Deep tissue massage"
+        src="Website photos\Relaxing\ceiling.jpg"
+        alt="Massage studio"
       />
     </div>
     <footer class="row">
@@ -328,6 +405,6 @@
       <div class="feet right__foot"></div>
     </footer>
     <script src="common.1.js"></script>
-    <script src="index.1.js"></script>
+    <script src="index.2.js"></script>
   </body>
 </html>

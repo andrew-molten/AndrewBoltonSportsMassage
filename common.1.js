@@ -12,6 +12,8 @@ const navLinks = document.querySelector(".nav__links");
 const btnBookOnline = document.querySelector(".book-online");
 const headerLogo = document.querySelector(".header-logo");
 const topNav = document.getElementById("topNav");
+const $cookiesBanner = document.querySelector(".cookies-banner");
+const $cookiesBannerButton = $cookiesBanner.querySelector("button");
 
 const minimizeNavBar = function () {
   topNav.className = "nav__links";
@@ -65,3 +67,75 @@ const handleHover = function (e) {
 };
 nav.addEventListener("mouseover", handleHover.bind(0.5));
 nav.addEventListener("mouseout", handleHover.bind(1));
+
+// Cookies
+const getCookie = (name) => {
+  const value = " " + document.cookie;
+  console.log("value", `==${value}==`);
+  const parts = value.split(" " + name + "=");
+  return parts.length < 2 ? undefined : parts.pop().split(";").shift();
+};
+
+const setCookie = function (name, value, expiryDays, domain, path, secure) {
+  const exdate = new Date();
+  exdate.setHours(
+    exdate.getHours() + (typeof expiryDays !== "number" ? 365 : expiryDays) * 24
+  );
+  document.cookie =
+    name +
+    "=" +
+    value +
+    ";expires=" +
+    exdate.toUTCString() +
+    ";path=" +
+    (path || "/") +
+    (domain ? ";domain=" + domain : "") +
+    (secure ? ";secure" : "");
+};
+
+(() => {
+  $cookiesBannerButton.addEventListener("click", () => {
+    $cookiesBanner.remove();
+  });
+})();
+
+const cookieName = "cookiesBanner";
+const hasCookie = getCookie(cookieName);
+
+if (!hasCookie) {
+  $cookiesBanner.classList.remove("hidden");
+}
+
+$cookiesBannerButton.addEventListener("click", () => {
+  setCookie(cookieName, "closed");
+  $cookiesBanner.remove();
+});
+
+//Google Tag manging for cliniko
+var dataLayer = window.dataLayer || (window.dataLayer = []);
+
+window.addEventListener("message", receiveMessage);
+
+function createDataLayer() {}
+
+function receiveMessage(e) {
+  if (typeof e.data !== "string") return;
+
+  if (e.data.search("cliniko-bookings-page:schedule") > -1) {
+    dataLayer.push({
+      event: "clinikoBookingSchedule",
+    });
+  }
+
+  if (e.data.search("cliniko-bookings-page:patient") > -1) {
+    dataLayer.push({
+      event: "clinikoBookingDetails",
+    });
+  }
+
+  if (e.data.search("cliniko-bookings-page:confirmed") > -1) {
+    dataLayer.push({
+      event: "clinikoBookingCompleted",
+    });
+  }
+}
