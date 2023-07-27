@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: /Refund-Cancellation/
+Disallow: /privacy-policy/
+
+
+Sitemap: https://www.andrewboltonsportsmassage.com/sitemap.xml

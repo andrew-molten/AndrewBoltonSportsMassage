@@ -1,0 +1,771 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato&family=Life+Savers&family=Poiret+One&display=swap");
+
+/* Sort out the icon bars location depending on screen size */
+/* check nav bar slide out is still working properly */
+/* Remove wrappers from headers for all pages */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato";
+  font-weight: normal;
+  font-style: normal;
+  color: #2e2e2e;
+  background-color: #ffffff;
+  line-height: 1.9;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 2rem 0 0 0;
+}
+li {
+  margin: 1rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+
+.slightly-bigger-text {
+  font-size: 1.1rem;
+}
+.home-heading {
+  color: #145cad;
+  line-height: 2rem;
+}
+
+/* Navigation */
+.nav__links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  transition: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header-logo {
+  z-index: 2;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.smaller-width {
+  width: 30%;
+}
+.book-btn-head {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav {
+  font-size: 25px;
+  height: auto;
+  font-style: normal;
+  text-align: center;
+  transition: none;
+  z-index: 2;
+}
+a:link {
+  text-decoration: none;
+}
+
+.nav a:link {
+  color: #2e2e2e;
+  font-weight: 1;
+  padding: 1rem 0.5rem;
+}
+.nav a:visited {
+  color: #2e2e2e;
+  font-weight: 1;
+}
+.nav .current {
+  text-decoration: underline 0.1rem;
+  text-underline-position: under;
+}
+.nav__item {
+  margin-bottom: 0.5rem;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.blog-link {
+  color: #2e2e2e;
+  font-weight: 600;
+  font-size: larger;
+  padding: 1rem 0.5rem;
+}
+
+/* Remove hamburger icon for desktop*/
+.logo-bars .icon {
+  display: none;
+}
+
+/* Book Now Button */
+.btn {
+  cursor: pointer;
+  padding: 1em 3em;
+  line-height: 0.5em;
+  background-color: #041d9a;
+  border-color: #145cad;
+
+  border-style: none;
+  border-radius: 10rem;
+  color: #fff;
+  transition: transform 0.5s ease;
+}
+
+.logo-bars {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100%;
+  z-index: 3;
+}
+
+#book-online {
+  display: none;
+  color: #fff;
+  padding: 1em 1.5em;
+}
+
+#book-online-head {
+  color: #fff;
+  padding: 1em 1.5em;
+  font-size: 25px;
+  display: inline-block;
+  align-self: center;
+  background-image: linear-gradient(
+    60deg,
+    rgb(2, 41, 238) -5%,
+    rgb(20, 168, 173) 50%,
+    rgb(4, 154, 27) 120%
+  );
+}
+.smaller-button {
+  padding: 0.75em 1.25em !important;
+}
+
+.btn:hover {
+  opacity: 80%;
+  border-width: 4px;
+  transform: scale(1.1, 1.1);
+  transition: transform 0.5s ease;
+}
+#sticky-book-now-btn {
+  display: none;
+}
+.main-header {
+  margin: auto;
+  /* position: relative; */
+  overflow: auto;
+}
+
+.this-page {
+  border-bottom: 1rem solid #2e2e2e;
+}
+.blog-row {
+  margin: 0 20%;
+}
+
+/* SLIDER */
+.slider {
+  margin: auto;
+  height: 289px;
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  width: 33.33% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+
+.slide > img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.slide:not(.vis) {
+  visibility: hidden;
+}
+.sl2 {
+  transform: translateX(100%);
+}
+.sl3 {
+  transform: translatex(200%);
+}
+.slider__btn {
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 50%;
+  border-width: 0;
+  background-color: #000000;
+  color: white;
+  position: absolute;
+  opacity: 60%;
+  cursor: grab;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1.75rem;
+  justify-content: center;
+}
+.slider-button-text {
+  align-self: center;
+}
+.slider__btn--left {
+  left: 1%;
+}
+.slider__btn--right {
+  right: 1%;
+}
+
+/* General Elements */
+.section {
+  padding: 0rem 3rem;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding: 0rem 1rem;
+}
+.image-column {
+  display: flex;
+  align-items: center;
+}
+.col-img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.head_col2 {
+  flex: 10%;
+}
+.home-col1 {
+  flex: 60% !important;
+}
+.home-col2 {
+  flex: 40% !important;
+}
+.center {
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+.heading_wrapper {
+  background-color: #031881;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.heading {
+  color: #fff;
+  line-height: 1.6;
+  font-size: 3rem;
+  margin: 0 0 0 3rem;
+  font-weight: 100;
+}
+.under-heading {
+  margin-top: 0.25rem;
+}
+.image-link-div {
+  position: relative;
+  margin-top: 1rem;
+}
+.image-link {
+  border-radius: 400px;
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.image-link-div:hover {
+  opacity: 60%;
+}
+.image-link-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: normal;
+  text-align: center;
+}
+
+/* Google Map */
+#gmap_canvas {
+  display: block;
+  width: 500px;
+  height: 300px;
+  margin: 2rem auto 0;
+}
+#location_gmap_canvas {
+  width: 600px;
+  height: 400px;
+  margin: 2rem 0 0 0;
+}
+
+/* Buttons */
+#Book-online-bottom {
+  display: block;
+  width: 40%;
+  padding: 2em 1.5em;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem auto;
+  background-image: linear-gradient(
+    60deg,
+    rgb(2, 41, 238) -5%,
+    rgb(20, 168, 173) 50%,
+    rgb(4, 154, 27) 120%
+  );
+}
+
+/* ABOUT PAGE*/
+
+.hidden {
+  display: none;
+}
+
+/* LOCATION PAGE */
+.loc_head {
+  margin: 0;
+  line-height: 1.2;
+}
+.loc_info {
+  margin: 2rem 0 0 2rem;
+}
+
+/* Privacy Policy */
+.privacy_wrapper {
+  width: 75%;
+  margin: 2rem auto;
+}
+
+/* Footer */
+.footer_img_wrap_index {
+  margin: 2rem 0 0 0;
+  width: 100%;
+  max-height: 50vh;
+  overflow: hidden;
+  display: flex;
+}
+.footer_img_index {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer_img_wrap {
+  margin: 2rem 0 0 0;
+  width: 100%;
+  max-height: 45vh;
+  overflow: hidden;
+}
+.footer_img {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  top: -45vh;
+}
+
+.middle__foot {
+  margin-top: 2rem;
+  text-align: center;
+  flex: 25%;
+}
+.footer__link {
+  margin: 0 1rem 0 0;
+  text-decoration: underline !important;
+  color: #041d9a;
+  font-size: 1.1rem;
+  text-underline-offset: 0.2em;
+}
+.footer__link:visited {
+  color: #041d9a;
+  text-decoration: underline !important;
+}
+
+.left__foot {
+  margin-left: 2rem;
+  line-height: 1.6;
+  flex: 42%;
+}
+
+.right__foot {
+  flex: 33%;
+}
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 600px;
+  margin: auto;
+}
+
+.booking-row {
+  background-color: #031881;
+  margin: 20vh;
+  margin-top: 5vh;
+}
+
+.handwritten {
+  font-family: "Caveat", cursive;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container {
+  background-color: #031881;
+  padding: 0 0 15px;
+}
+
+.cookies-banner {
+  background: #444;
+  color: #fff;
+  padding: 6px;
+  font-size: 13px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.cookies-banner button {
+  text-decoration: none;
+  background: #222;
+  color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 4px 7px;
+  margin: 2px 0;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
+
+.cookies-banner button:hover {
+  background: #fff;
+  color: #222;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, width 0.2s ease-in-out,
+    height 0.2s ease-in-out;
+}
+
+.dot.active {
+  transform: scale(1.5);
+}
+
+.paragraph-1 {
+  font-size: medium;
+}
+
+#mc_embed_signup .button {
+  background-color: #800080 !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+  height: 35px !important;
+  line-height: 35px;
+}
+
+/*//////////////// PHONE VIEW ////////////////////*/
+/*//////////////// PHONE VIEW ////////////////////*/
+/*//////////////// PHONE VIEW ////////////////////*/
+/*//////////////// PHONE VIEW ////////////////////*/
+@media only screen and (max-width: 650px) {
+  /* Slider */
+  .slider {
+    width: 100%;
+  }
+  .slide {
+    width: 100% !important;
+  }
+  .slide > img {
+    height: 20rem !important;
+    object-fit: cover;
+  }
+}
+.blog-row {
+  margin: 0 7%;
+}
+
+.central-img {
+  display: block;
+  height: 310px;
+  width: 100%;
+  object-fit: cover;
+  margin: 1rem auto;
+  justify-content: center;
+}
+
+/*************************** Phone view **************************/
+/*************************** Phone view **************************/
+@media only screen and (max-width: 950px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul {
+    margin: 1rem 0 0 0;
+  }
+
+  .image-link-text {
+    font-size: 1.5rem;
+  }
+
+  #sticky-book-now-btn {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    z-index: 10;
+    background-image: linear-gradient(
+      60deg,
+      rgb(2, 41, 238) -5%,
+      rgb(20, 168, 173) 50%,
+      rgb(4, 154, 27) 120%
+    );
+  }
+
+  .logo-bars {
+    display: grid;
+    grid-template-columns: 3.5fr 0.5fr;
+    align-items: center;
+  }
+
+  .logo-bars .icon {
+    display: flex;
+    font-size: 7vw;
+  }
+
+  .fa-bars {
+    color: #2e2e2e;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .nav {
+    max-height: 20em;
+    min-height: 0em;
+    transition: all 1s ease-out;
+    height: 0px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+  }
+  .nav.responsive {
+    max-height: 20em;
+    min-height: 18.1em;
+  }
+  .relative {
+    position: relative;
+  }
+
+  .header-logo {
+    background-color: #fff;
+    width: 90%;
+    display: flex;
+    position: relative;
+    z-index: 3;
+  }
+
+  /* Hide nav menu*/
+  .nav__links {
+    transform: translateY(-445px);
+    display: block;
+    visibility: hidden;
+    padding-left: 0;
+  }
+
+  .nav__item {
+    display: block;
+  }
+
+  #mc_embed_signup {
+    width: 100% !important;
+  }
+
+  /* Display Nav menu */
+  .nav__links.responsive .nav__item {
+    float: none;
+    visibility: visible;
+  }
+
+  .nav__links.responsive {
+    transform: translateY(0px);
+    transition: transform 1s ease-out, visibility 0.5s;
+    visibility: visible;
+  }
+
+  #book-online {
+    display: inline-block;
+    position: static;
+    padding: 0.5em 0.75em !important;
+    margin-top: 1rem;
+  }
+
+  #book-online-head {
+    display: none;
+  }
+
+  /* General Elements */
+  .section {
+    padding: 0rem 1rem;
+  }
+  .row {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+  .column {
+    flex: 100%;
+    height: auto;
+    padding: 0 1rem;
+  }
+  .col-img {
+    margin: 2rem auto 0;
+  }
+
+  /* About */
+  .central-img {
+    height: 150px;
+  }
+
+  /* Google Map */
+  .mapouter {
+    position: relative;
+    text-align: right;
+  }
+  .gmap_canvas {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: none !important;
+  }
+  #gmap_canvas {
+    width: 100%;
+  }
+
+  #location_gmap_canvas {
+    width: 100%;
+  }
+
+  /* Buttons */
+  #times-available {
+    width: 80% !important;
+  }
+  #Book-online-bottom {
+    width: 60% !important;
+  }
+  #times-available-location {
+    line-height: 1.1rem;
+  }
+
+  .booking-row {
+    margin: 0;
+  }
+
+  /* Location */
+  .loc_head {
+    font-size: 1.5rem;
+  }
+  .opening_hours {
+    font-size: 1rem;
+  }
+  .loc_info {
+    margin-left: 0;
+  }
+
+  /* Privacy Policy */
+  .privacy_wrapper {
+    width: 90%;
+  }
+
+  /* Footer */
+  .footer_img_index {
+    top: 0 !important;
+  }
+  .footer_img {
+    top: 0 !important;
+  }
+
+  #classicLink {
+    color: #041d9a;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .central-img {
+    object-position: 50% 40%;
+  }
+  .blog-row {
+    margin: 0 12%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .central-img {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .central-img {
+    height: 350px;
+    width: 60%;
+  }
+
+  .col-img {
+    width: auto;
+    max-width: 80%;
+  }
+
+  .fam-img {
+    height: 350px;
+  }
+}
