@@ -39,6 +39,10 @@ h4 {
   font-size: 1rem;
 }
 
+.paragraph-1 {
+  font-size: 1.25rem;
+}
+
 .slightly-bigger-text {
   font-size: 1.1rem;
 }
@@ -496,10 +500,6 @@ a:link {
 
 .dot.active {
   transform: scale(1.5);
-}
-
-.paragraph-1 {
-  font-size: medium;
 }
 
 #mc_embed_signup .button {
