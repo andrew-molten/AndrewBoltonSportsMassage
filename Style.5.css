@@ -542,7 +542,7 @@ a:link {
 
 /*************************** Phone view **************************/
 /*************************** Phone view **************************/
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1023px) {
   h1,
   h2,
   h3,
@@ -588,7 +588,7 @@ a:link {
   }
 
   .nav {
-    max-height: 20em;
+    max-height: 0em;
     min-height: 0em;
     transition: all 1s ease-out;
     height: 0px;
@@ -597,8 +597,8 @@ a:link {
     width: 100%;
   }
   .nav.responsive {
-    max-height: 20em;
-    min-height: 18.1em;
+    max-height: 25em;
+    min-height: 22em;
   }
   .relative {
     position: relative;
@@ -614,7 +614,7 @@ a:link {
 
   /* Hide nav menu*/
   .nav__links {
-    transform: translateY(-445px);
+    transform: translateY(-550px);
     display: block;
     visibility: hidden;
     padding-left: 0;
