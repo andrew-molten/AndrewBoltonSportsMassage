@@ -38,6 +38,9 @@ h3 {
 h4 {
   font-size: 1rem;
 }
+h5 {
+  font-size: 1rem;
+}
 
 .paragraph-1 {
   font-size: 1.25rem;
@@ -49,6 +52,15 @@ h4 {
 .home-heading {
   color: #145cad;
   line-height: 2rem;
+}
+
+.urgent-banner {
+  color: white;
+  background-color: rgb(212, 0, 0);
+  position: fixed;
+  width: 100%;
+  /* top: 0; */
+  margin-top: 0 !important;
 }
 
 /* Navigation */
@@ -106,7 +118,7 @@ a:link {
   width: 100%;
   left: 0;
   background-color: #fff;
-  z-index: 3;
+  z-index: 4;
 }
 
 .blog-link {
@@ -597,8 +609,10 @@ a:link {
     width: 100%;
   }
   .nav.responsive {
-    max-height: 25em;
-    min-height: 22em;
+    /* max-height: 25em; */
+    /* Use 25 if there is an extra option */
+    max-height: 20em;
+    min-height: 20em;
   }
   .relative {
     position: relative;
@@ -614,7 +628,7 @@ a:link {
 
   /* Hide nav menu*/
   .nav__links {
-    transform: translateY(-550px);
+    transform: translateY(-460px);
     display: block;
     visibility: hidden;
     padding-left: 0;
