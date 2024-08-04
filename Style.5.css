@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato&family=Life+Savers&family=Poiret+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato&family=Life+Savers&family=Poiret+One&display=swap');
 
 /* Sort out the icon bars location depending on screen size */
 /* check nav bar slide out is still working properly */
@@ -9,7 +9,7 @@
   margin: 0;
 }
 body {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: normal;
   font-style: normal;
   color: #2e2e2e;
@@ -23,8 +23,9 @@ h4,
 p {
   margin: 2rem 0 0 0;
 }
+
 li {
-  margin: 1rem;
+  margin: 0 0 0 3em;
 }
 h1 {
   font-size: 2.5rem;
@@ -448,7 +449,7 @@ a:link {
 }
 
 .handwritten {
-  font-family: "Caveat", cursive;
+  font-family: 'Caveat', cursive;
   color: white;
   text-align: center;
   font-size: 3rem;
