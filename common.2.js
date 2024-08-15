@@ -249,6 +249,7 @@ const changeColors = function (color) {
 }
 
 const checkSticky = function () {
+  console.log(newScrollY)
   if (newScrollY > 0) {
     header.classList.add('sticky')
     headerLogo.classList.add('smaller-width')
