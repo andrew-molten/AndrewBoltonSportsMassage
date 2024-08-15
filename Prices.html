@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="Style.5.css" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="Website photos\Logo\Logo3(1).png"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Best Massage tailored to suit you and your needs. Sports Massage, Deep Tissue, Relaxing Massage & private Yoga."
+    />
+    <title>Massage & Yoga - Andrew Bolton Sports Massage</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-GJHDHQFCP7"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-GJHDHQFCP7");
+  </script>
+  <!-- New Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-5J6LSS9VEP"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-5J6LSS9VEP");
+  </script>
+  <!-- <img src="Website photos/Logo/Logo3.png" />
+    -->
+  <body>
+    <header class="main-header">
+      <div class="logo-bars">
+        <a href="index.html">
+          <img
+            class="header-logo"
+            src="Website photos/Logo/logo2 (1).png"
+            alt="Andrew Bolton Sports Massage and Yoga"
+          />
+        </a>
+        <span class="icon"
+          ><a href="javascript:void(0);" onclick="navBarAction()">
+            <i class="fa fa-bars"></i> </a
+        ></span>
+        <span class="book-btn-head">
+          <a
+            class="btn book-online"
+            id="book-online-head"
+            href="https://andrew-bolton-massage-and-yoga.cliniko.com/bookings#service"
+            >Book Now</a
+          >
+        </span>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__links" id="topNav">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="About-Me.html">About me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link current" href="Massage-&-Yoga.html"
+              >Massage</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="Blog.html">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="Contact.html">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="FAQ.html">FAQ</a>
+          </li>
+          <!-- <li class="nav__item">
+            <a class="nav__link" href="GiftVouchers.html">Vouchers</a>
+          </li> -->
+
+          <li class="nav__item">
+            <a
+              class="btn book-online"
+              id="book-online"
+              href="https://andrew-bolton-massage-and-yoga.cliniko.com/bookings#service"
+              >Book Now</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="urgent-banner center">
+        <!-- Can edit text for this in the js file -->
+    </header>
+    <span class="book-btn-head">
+      <a
+        class="btn book-online"
+        id="sticky-book-now-btn"
+        href="https://andrew-bolton-massage-and-yoga.cliniko.com/bookings#service"
+        >Book Now</a
+      >
+    </span>
+    <div class="heading_wrapper">
+      <h1 class="heading">Massage & Yoga</h1>
+    </div>
+    <div class="row column-reverse">
+      <div class="column center">
+        <h2>Massage Prices</h2>
+        <p>
+          30 minutes $55<br />
+          45 minutes $70<br />
+          60 minutes $90<br />
+          75 minutes $110<br />
+          90 minutes $135<br />
+          120 minutes $180
+        </p>
+        <h2>Private yoga session</h2>
+        <p>
+          60 minutes $90<br />
+          75 minutes $110<br />
+          90 minutes $135<br />
+        </p>
+        <p>
+          Pay with cash, bank transfer or card.
+        </p>
+      </div>
+  
+      <div class="column image-column">
+        <img
+          class="col-img"
+          src="Website photos\Sports\DSC_0201(2).jpg"
+          alt="Deep Tissue Massage"
+        />
+      </div>
+    </div>
+   
+    <!-- <div class="google-review-rating"> -->
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+    <div class="elfsight-app-e536fd01-894d-49c4-a114-2518c253167c"></div>
+
+    <!-- Online Booking -->
+    <div class="container">
+      <div class="booking-row">
+        <h3 class="handwritten">Book an Appointment</h3>
+        <iframe
+          id="cliniko-94087596"
+          src="https://andrew-bolton-massage-and-yoga.cliniko.com/bookings?embedded=true"
+          frameborder="0"
+          scrolling="auto"
+          width="100%"
+          height="1000"
+          style="pointer-events: auto"
+        ></iframe>
+        <script type="text/javascript">
+          window.addEventListener("message", function handleIFrameMessage(e) {
+            var clinikoBookings = document.getElementById("cliniko-94087596");
+            if (typeof e.data !== "string") return;
+            if (e.data.search("cliniko-bookings-resize") > -1) {
+              var height = Number(e.data.split(":")[1]);
+              clinikoBookings.style.height = height + "px";
+            }
+            e.data.search("cliniko-bookings-page") > -1 &&
+              clinikoBookings.scrollIntoView();
+          });
+        </script>
+      </div>
+    </div>
+
+    <div class="footer_img_wrap_index">
+      <img
+        class="footer_img_index"
+        src="Website photos\Relaxing\ceiling.jpg"
+        alt="Massage studio"
+      />
+    </div>
+    <footer class="row">
+      <div class="feet left__foot">
+        <p>
+          27 Wakatu Ave,<br />
+
+          Moncks Bay 8081,<br />
+          Christchurch NZ<br />
+          <br />
+          02041780923
+        </p>
+      </div>
+      <div class="cookies-banner hidden">
+        By clicking ”OK”, you agree to the storing of cookies on your device to
+        enhance site navigation, analyze site usage, and improve marketing.
+        <button>Accept</button>
+      </div>
+      <div class="feet middle__foot">
+        <a class="footer__link" href="index.html">Home</a>
+        <a class="footer__link" href="About-Me.html">About me</a>
+        <a class="footer__link" href="Massage-&-Yoga.html">Massage</a>
+        <a class="footer__link" href="Blog.html">Blog</a>
+        <a class="footer__link" href="Contact.html">Contact</a>
+        <a class="footer__link" href="FAQ.html">FAQ</a>
+        <!-- <a class="footer__link" href="GiftVouchers.html">Vouchers</a> -->
+        <a class="footer__link" href="privacy-policy.html">Privacy Policy</a>
+        <a class="footer__link" href="Refund-Cancellation.html"
+          >Refund-Cancellation-Policy</a
+        >
+      </div>
+      <div class="feet right__foot"></div>
+    </footer>
+    <script src="common.2.js"></script>
+  </body>
+</html>
