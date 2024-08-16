@@ -24,9 +24,9 @@ p {
   margin: 2rem 0 0 0;
 }
 
-li {
+/* li {
   margin: 0 0 0 3em;
-}
+} */
 h1 {
   font-size: 2.5rem;
 }
@@ -113,6 +113,7 @@ a:link {
 }
 .nav__item {
   margin-bottom: 0.5rem;
+  margin-left: 2em;
 }
 .sticky {
   position: fixed;
@@ -523,6 +524,11 @@ a:link {
   line-height: 35px;
 }
 
+.bullet-point-list {
+  margin-left: 3em;
+  font-weight: bold;
+}
+
 /*//////////////// PHONE VIEW ////////////////////*/
 /*//////////////// PHONE VIEW ////////////////////*/
 /*//////////////// PHONE VIEW ////////////////////*/
@@ -637,6 +643,7 @@ a:link {
 
   .nav__item {
     display: block;
+    margin-left: 0;
   }
 
   #mc_embed_signup {
