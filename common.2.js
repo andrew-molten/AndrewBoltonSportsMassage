@@ -165,7 +165,7 @@ let newScrollY
 window.onscroll = function () {
   prevScrollY = newScrollY
   newScrollY = window.scrollY
-  checkSticky()
+  // checkSticky()
 
   if (!stickyBookNow) return
 
@@ -248,18 +248,18 @@ const changeColors = function (color) {
   } else if (color[2] < 254) color[2]++
 }
 
-const checkSticky = function () {
-  console.log(newScrollY)
-  if (newScrollY > 0) {
-    header.classList.add('sticky')
-    headerLogo.classList.add('smaller-width')
-    headerBookNow.classList.add('smaller-button')
-    nav.classList.add('relative')
-  }
-  if (newScrollY === 0) {
-    header.classList.remove('sticky')
-    headerLogo.classList.remove('smaller-width')
-    headerBookNow.classList.remove('smaller-button')
-  }
-  if (newScrollY === 0) nav.classList.remove('relative')
-}
+// const checkSticky = function () {
+//   // console.log(newScrollY)
+//   // if (newScrollY > 0) {
+//   // header.classList.add('sticky')
+//   // headerLogo.classList.add('smaller-width')
+//   // headerBookNow.classList.add('smaller-button')
+//   // nav.classList.add('relative')
+//   // }
+//   // if (newScrollY === 0) {
+//   //   header.classList.remove('sticky')
+//   //   headerLogo.classList.remove('smaller-width')
+//   //   headerBookNow.classList.remove('smaller-button')
+//   // }
+//   // if (newScrollY === 0) nav.classList.remove('relative')
+// }

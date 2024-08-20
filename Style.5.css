@@ -75,13 +75,13 @@ h5 {
 }
 .header-logo {
   z-index: 2;
-  width: 50%;
+  width: 30%;
   display: block;
   margin: auto;
 }
-.smaller-width {
+/* .smaller-width {
   width: 30%;
-}
+} */
 .book-btn-head {
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +89,7 @@ h5 {
 .nav {
   font-size: 25px;
   height: auto;
+  position: relative;
   font-style: normal;
   text-align: center;
   transition: none;
@@ -115,12 +116,15 @@ a:link {
   margin-bottom: 0.5rem;
   margin-left: 2em;
 }
-.sticky {
+/* .sticky {
   position: fixed;
   width: 100%;
   left: 0;
   background-color: #fff;
   z-index: 4;
+} */
+.content-container {
+  margin-top: 8em;
 }
 
 .blog-link {
@@ -164,7 +168,7 @@ a:link {
 
 #book-online-head {
   color: #fff;
-  padding: 1em 1.5em;
+  padding: 0.75em 1.25em;
   font-size: 25px;
   display: inline-block;
   align-self: center;
@@ -175,10 +179,6 @@ a:link {
     rgb(4, 154, 27) 120%
   );
 }
-.smaller-button {
-  padding: 0.75em 1.25em !important;
-}
-
 .btn:hover {
   opacity: 80%;
   border-width: 4px;
@@ -190,8 +190,12 @@ a:link {
 }
 .main-header {
   margin: auto;
-  /* position: relative; */
   overflow: auto;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  z-index: 4;
 }
 
 .this-page {
@@ -529,23 +533,6 @@ a:link {
   font-weight: bold;
 }
 
-/*//////////////// PHONE VIEW ////////////////////*/
-/*//////////////// PHONE VIEW ////////////////////*/
-/*//////////////// PHONE VIEW ////////////////////*/
-/*//////////////// PHONE VIEW ////////////////////*/
-@media only screen and (max-width: 650px) {
-  /* Slider */
-  .slider {
-    width: 100%;
-  }
-  .slide {
-    width: 100% !important;
-  }
-  .slide > img {
-    height: 20rem !important;
-    object-fit: cover;
-  }
-}
 .blog-row {
   margin: 0 7%;
 }
@@ -558,6 +545,11 @@ a:link {
   margin: 1rem auto;
   justify-content: center;
 }
+
+/*//////////////// PHONE VIEW ////////////////////*/
+/*//////////////// PHONE VIEW ////////////////////*/
+/*//////////////// PHONE VIEW ////////////////////*/
+/*//////////////// PHONE VIEW ////////////////////*/
 
 /*************************** Phone view **************************/
 /*************************** Phone view **************************/
@@ -575,6 +567,10 @@ a:link {
     font-size: 1.5rem;
   }
 
+  .content-container {
+    margin-top: 9em;
+  }
+
   #sticky-book-now-btn {
     display: block;
     position: fixed;
@@ -590,9 +586,12 @@ a:link {
   }
 
   .logo-bars {
+    position: relative;
     display: grid;
     grid-template-columns: 3.5fr 0.5fr;
     align-items: center;
+    background-color: #fff;
+    z-index: 4;
   }
 
   .logo-bars .icon {
@@ -611,7 +610,6 @@ a:link {
     min-height: 0em;
     transition: all 1s ease-out;
     height: 0px;
-    position: absolute;
     background-color: #fff;
     width: 100%;
   }
@@ -621,13 +619,10 @@ a:link {
     max-height: 20em;
     min-height: 20em;
   }
-  .relative {
-    position: relative;
-  }
 
   .header-logo {
     background-color: #fff;
-    width: 90%;
+    width: 50%;
     display: flex;
     position: relative;
     z-index: 3;
@@ -676,21 +671,6 @@ a:link {
   /* General Elements */
   .section {
     padding: 0rem 1rem;
-  }
-  .row {
-    display: flex;
-    flex-flow: column wrap;
-  }
-  .column-reverse {
-    flex-direction: column-reverse;
-  }
-  .column {
-    flex: 100%;
-    height: auto;
-    padding: 0 1rem;
-  }
-  .col-img {
-    margin: 2rem auto 0;
   }
 
   /* About */
@@ -789,5 +769,65 @@ a:link {
 
   .fam-img {
     height: 350px;
+  }
+}
+
+@media only screen and (max-width: 935px) {
+  .content-container {
+    margin-top: 8em;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .content-container {
+    margin-top: 7em;
+  }
+}
+@media only screen and (max-width: 725px) {
+  .row {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+  .column {
+    flex: 100%;
+    height: auto;
+    padding: 0 1rem;
+  }
+  .col-img {
+    margin: 2rem auto 0;
+    max-width: 50%;
+  }
+  .content-container {
+    margin-top: 6em;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  /* Slider */
+  .slider {
+    width: 100%;
+  }
+  .slide {
+    width: 100% !important;
+  }
+  .slide > img {
+    height: 20rem !important;
+    object-fit: cover;
+  }
+
+  .content-container {
+    margin-top: 5em;
+  }
+
+  .header-logo {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content-container {
+    margin-top: 4em;
   }
 }
