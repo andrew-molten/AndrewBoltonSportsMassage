@@ -1,0 +1,98 @@
+[
+  {
+    "name": "accounts/9712041106034458949/reviews/Ci9DQUlRQUNvZENodHljRjlvT25sTlZuSm1RVVZGVWw4emNFSXpaVkJFTlRWbGJrRRAB",
+    "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25sTlZuSm1RVVZGVWw4emNFSXpaVkJFTlRWbGJrRRAB",
+    "reviewer": {
+      "displayName": "Erin Brookman",
+      "profilePhotoUrl": null,
+      "reviewCountText": "6 reviews",
+      "reviewCount": 6,
+      "photoCount": 0,
+      "isLocalGuide": false
+    },
+    "starRating": "FIVE_STAR",
+    "comment": "My body is always grateful after an Andrew Bolton massage! He's very skilled and has such a friendly down to earth manner. I always leave his lovely massage studio feeling lighter and less tense.",
+    "createTime": "2026-05-22T00:00:00Z",
+    "updateTime": null,
+    "isNew": true,
+    "shareUrl": "https://maps.app.goo.gl/nlXVnJmQUVFUexFNT5elnA",
+    "ownerResponse": {
+      "responderName": "Andrew Bolton Sports Massage",
+      "responseText": "Thanks Erin!",
+      "responseTime": "2026-05-22T00:00:00Z"
+    },
+    "positiveTags": []
+  },
+  {
+    "name": "accounts/9712041106034458949/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kU1l6aG9OWEY2T1hFeVgxRTFMVlpzU3psMVMwRRAB",
+    "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kU1l6aG9OWEY2T1hFeVgxRTFMVlpzU3psMVMwRRAB",
+    "reviewer": {
+      "displayName": "Mandy Holdstock",
+      "profilePhotoUrl": null,
+      "reviewCountText": "6 reviews \u00b7 1 photo",
+      "reviewCount": 6,
+      "photoCount": 1,
+      "isLocalGuide": false
+    },
+    "starRating": "FIVE_STAR",
+    "comment": "My first massage with Andrew today. He certainly lived up to all his positive reviews. I felt totally at ease and respected. A good case of DOMS from a walk on Mt Thomas had my quads screaming but the massage helped loosen them up and I'm super pleased that I made the appointment! Great conversation as well!!",
+    "createTime": "2026-01-22T00:00:00Z",
+    "updateTime": null,
+    "isNew": true,
+    "shareUrl": "https://maps.app.goo.gl/4XBM4fD33hx47w2v7",
+    "ownerResponse": {
+      "responderName": "Andrew Bolton Sports Massage",
+      "responseText": "Thanks so much Mandy. Pleasure to meet you today, I'm glad I could help!",
+      "responseTime": "2026-01-22T00:00:00Z"
+    },
+    "positiveTags": []
+  },
+  {
+    "name": "accounts/9712041106034458949/reviews/Ci9DQUlRQUNvZENodHljRjlvU2FtdWVsQ2xlbWVudARRAB",
+    "reviewId": "Ci9DQUlRQUNvZENodHljRjlvU2FtdWVsQ2xlbWVudARRAB",
+    "reviewer": {
+      "displayName": "Samuel Clement",
+      "profilePhotoUrl": null,
+      "reviewCountText": "Local Guide \u2022 9 reviews \u2022 25 photos",
+      "reviewCount": 9,
+      "photoCount": 25,
+      "isLocalGuide": true
+    },
+    "starRating": "FIVE_STAR",
+    "comment": "Best in Christchurch",
+    "createTime": "2026-04-22T00:00:00Z",
+    "updateTime": null,
+    "isNew": true,
+    "shareUrl": "https://maps.app.goo.gl/aqvdKhyAwC5TLCfp7",
+    "ownerResponse": {
+      "responderName": "Andrew Bolton Sports Massage",
+      "responseText": "Thanks Samuel!",
+      "responseTime": "2026-04-22T00:00:00Z"
+    },
+    "positiveTags": []
+  },
+  {
+    "name": "accounts/9712041106034458949/reviews/Ci9DQUlRQUNvZENodHljRjlvU2FuZHRCZXR0ZXJpZGdlRRAB",
+    "reviewId": "Ci9DQUlRQUNvZENodHljRjlvU2FuZHRCZXR0ZXJpZGdlRRAB",
+    "reviewer": {
+      "displayName": "Sandt Betteridge",
+      "profilePhotoUrl": null,
+      "reviewCountText": "8 reviews \u2022 1 photo",
+      "reviewCount": 8,
+      "photoCount": 1,
+      "isLocalGuide": false
+    },
+    "starRating": "FIVE_STAR",
+    "comment": "I have been to Andrew many times now and have always been really happy with the treatments I've received. Thanks for helping me out! :)",
+    "createTime": "2026-04-22T00:00:00Z",
+    "updateTime": null,
+    "isNew": true,
+    "shareUrl": "https://maps.app.goo.gl/sandtbetteridge",
+    "ownerResponse": {
+      "responderName": "Andrew Bolton Sports Massage",
+      "responseText": "Thanks Toby!",
+      "responseTime": "2026-04-22T00:00:00Z"
+    },
+    "positiveTags": []
+  }
+]
